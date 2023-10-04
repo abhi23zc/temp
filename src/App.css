@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box span{
+  color:black;
+  display: inline-block;
+  margin: 10px 10px 0px 10px;
+  font-weight: 600;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+}
+
+#message-container{
+  
+  overflow-y: scroll;
+
+  width: 100%;
+  background-color: white;
+  margin:10px 10px 0 10px;
+  /* width: 400px;
+  height: 200px; */
+}
+
+#message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.box{
+  /* width: 94%; */
+  /* position: fixed; */
+  margin-bottom: 5px;
+  border-bottom: 2px solid white;
+  background: #f1f1f1;
+  
+  height: 50px;
+}
+
+.head{
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-evenly;
+}
+
+.msgbox{
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msgbox p{
+
+  margin: 10px ;
+  background-color: rgb(157, 157, 221);
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+textarea{
+  border: none;
+  width: 98%;
+  margin-left: 10px;
+  padding: 5px;
+  outline: none;
+  font-weight: 200;
+  color: black;
+  background-color: #FBFBFB;
+}
+
+
+@media screen and (min-width: 768px)  {
+  body {
+    background-color: white;
+  }
+
+  #message-container{
+    
+    margin: auto ;
+    width: 50%;
+    height: 70vh;
+  }
+
+  textarea{
+
+    background: #f1f1f1;
+    outline: none;
+    border: none;
+    margin-left: 25%;
+    font-size: 15px;
+    width: 50%;
+    color: black;
+   
+    padding: 5px; 
+    /* background-color: rgb(223, 220, 250); */
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: start;
+  }
+  
+}
+
+
+.msginput {  display: flex;
+  /* margin-left: 25%; */
+  flex-direction: column;}
